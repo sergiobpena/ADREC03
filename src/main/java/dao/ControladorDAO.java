@@ -122,7 +122,7 @@ public class ControladorDAO {
     public void oberMaximosDia(){
         Statement stmt=null;
 
-        String sql="select paises.countriesAndTerritories,max( r.cases), r.dateRep\n" +
+        String sql="select paises.countriesAndTerritories,max( r.deaths), r.dateRep\n" +
                 "from paises\n" +
                 "left join reportes r on paises.countriesAndTerritories = r.fk_countriesAndTerritories\n" +
                 "group by paises.countriesAndTerritories;";

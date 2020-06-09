@@ -47,7 +47,7 @@ public class Interfaz {
                     }
                     break;
                 case 2:
-                    System.out.println("Maximo de casos nun dia por pais : ");
+                    System.out.println("Maximo de mortes nun dia por pais : ");
                     fc.paisMaisCasosDia();
                     break;
                 case 3:
