@@ -213,8 +213,8 @@ public class ControladorDAO {
         }
         Collections.sort(listado);
 
-        for(CrecementoPais c : listado){
-            System.out.println("- Pais : " + c.getPais() + "\t Crecemento : " + c.getCrecemento()*100 );
+        for( int i = listado.size()-1;i >= 0;i--){
+            System.out.println("- Pais : " + listado.get(i).getPais() + "\t Crecemento : " + listado.get(i).getCrecemento()*100 );
         }
     }
 
