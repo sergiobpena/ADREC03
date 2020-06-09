@@ -10,3 +10,17 @@ Debese realizar unha aplicación que cumpra os seguintes requisitos para acadar 
     - Obter para cada pais o maior número de mortes nun día. Ademais deberase indicar cal foi ese día.
 
 NOTAS: Débese utilizar SAX para parsear o arquivo XML.
+
+##Parte opcional
+
+Engadiranse 3 puntos máis se:
+
+- Descargarase a última fonte de datos posible dos eguinte enlace https://opendata.ecdc.europa.eu/covid19/casedistribution/xml e a partir deste actualizarnse todos os datos da base de datos.
+
+  *NOTAS: Non se pode borrar todos os datos da base de datos e cargalos de novo*
+
+Engadiranse 2 puntos máis se:
+
+- Se realizan as seguintes consultas:
+    - O pais con maior número de casos para cada día do que se teña información.
+    - Os paises ordenador de maior porcentaxe de crecemento a menor entre o dato de casos do día e o anterior.

@@ -27,17 +27,9 @@ public class ContinenteDAOSQLite implements ContinenteDAO {
             e.printStackTrace();
             this.con.rollback();
 
-        }finally {
-            try {
-                if(stmt!=null) {
-                    stmt.close();
-                }
-            } catch (SQLException e) {
-//                e.printStackTrace();
-            }
         }
-    }
 
+    }
 
     public Continente obter(Continente a) {
         return null;
@@ -99,15 +91,6 @@ public class ContinenteDAOSQLite implements ContinenteDAO {
             } catch (SQLException ex) {
                 ex.printStackTrace();
             }
-        }finally {
-            if(stmt!=null){
-                try {
-                    stmt.close();
-                } catch (SQLException e) {
-                    System.out.println("Erro pechando a creacion de continentes");
-                }
-            }
         }
-
     }
 }

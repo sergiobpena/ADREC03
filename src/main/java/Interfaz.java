@@ -26,11 +26,11 @@ public class Interfaz {
         while (flag) {
             System.out.print("\n\nIndique a operacion que desexe realizar, introducindo o numero correspondente: \n\n"
                     + "[1]-Paises con mais casos que un determinado numero a introducir \t \n"
-                    + "[2]-Pais con mais mortes segundo o dia a introducir  \n"
+                    + "[2]-Maior numero de mortes nun dia  por pais \n"
                     + "[3]-Listado de paises con mais casos detectados por dia \n"
-                    + "[4]-Listado de paises con maior crecemento de casos detectados por dia \n"
-                    + "[5]-Cargar información \n"
-                    + "[6]-Actualizar información \n"
+                    + "[4]-Listado de paises con maior crecemento de casos detectados nun dia a introducir \n"
+                    + " \n\n"
+                    + "[10]-Actualizar información co arquivo coronavirus_actualizado.xml \n"
                     + "[99]-Finaliza programa \n\n[Operacion]: ");
             int operacion = this.sc.nextInt();
 
@@ -68,12 +68,8 @@ public class Interfaz {
                     }
 
                     break;
-                case 5:
-                    System.out.println("Cargando datos iniciais do arquivo coronavirus.xml");
-                    fc.cargaEgarda();
-                    System.out.println("Datos cargados \n");
-                    break;
-                case 6:
+
+                case 10:
                     System.out.println("Cargando arquivo actualización");
                     fc.actualizarSerie();
                     System.out.println("Datos actualizados");
